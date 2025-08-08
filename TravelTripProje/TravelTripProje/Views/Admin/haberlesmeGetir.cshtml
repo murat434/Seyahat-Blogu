@@ -1,0 +1,28 @@
+﻿@model TravelTripProje.Models.Siniflar.haberlesme
+@{
+    ViewBag.Title = "haberlesmeGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="form-group">
+    <label>Ad Soyad:</label>
+    <p>@Model.AdSoyad</p>
+</div>
+
+<div class="form-group">
+    <label>Mail:</label>
+    <p>@Model.Mail</p>
+</div>
+
+<div class="form-group">
+    <label>Konu:</label>
+    <p>@Model.Konu</p>
+</div>
+
+<div class="form-group">
+    <label>Mesaj:</label>
+    <p>@Model.Mesaj</p>
+</div>
+<a href="/Admin/haberlesmeListe" class="btn btn-secondary">Geri Dön</a>
+
+

@@ -1,0 +1,105 @@
+﻿@model TravelTripProje.Models.Siniflar.haberlesme
+
+@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Free Easy-Trip Website Template | Contact :: w3layouts</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="css/slider.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+    <div class="contact">
+        <div class="wrap">
+            <div class="contact-top">
+                <h3>İletişim Bilgileri</h3>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>
+            <div class="form">
+                <form class="cmxform" id="contactForm" method="post" action="/haberlesme/mesajgonder">
+                    <div>
+                        <input type="text" class="textbox" name="AdSoyad" placeholder="Ad Soyad" />
+                    </div>
+                    <div>
+                        <input type="text" class="textbox" name="Mail" placeholder="Mail" />
+                    </div>
+                    <div>
+                        <input type="text" class="textbox" name="Konu" placeholder="Konu" />
+                    </div>
+                    <div class="form1">
+                        <div>
+                            <textarea class="textarea" name="Mesaj" placeholder="Mesaj"></textarea>
+                            @*<textarea name="Mesaj" placeholder="Mesaj" rows="5" cols="40"
+                        style="width: 100%; padding: 10px; font-size: 1em; border: 1px solid #ccc; border-radius: 4px; resize: none;"></textarea>*@
+                        </div>
+                    </div>
+                    <br />
+                    <div>
+                        <button type="submit" class="read" style="background:none; border:none; padding:0; font:inherit; color:inherit; cursor:pointer;">
+                            <span class="read">Gönder</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            
+
+            <div class="clear"></div>
+            <br />
+            <div class="contact-bottom">
+                <div class="contact-left">
+                    <div class="contact-add">
+                        <h3>Adres-1</h3>
+                        <p> insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.</p>
+                        <p>Telefon: +90 xxx xxx xx xx</p>
+                        <p>Fax:1-22-5555</p>
+                        <p>Email:<a href="mailto:signup@gmail.com">signup@mail.com</a></p>
+                    </div>
+                    <div class="contact-add">
+                        <h3>Adres-2</h3>
+                        <p>Telefon: +90 xxx xxx xx xx</p>
+                        <p>Fax:1-22-5555</p>
+                        <p>Email:<a href="mailto:signup@gmail.com">signup@mail.com</a></p>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe width="580"
+                            height="250"
+                            frameborder="0"
+                            style="border:0;"
+                            loading="lazy"
+                            allowfullscreen
+                            referrerpolicy="no-referrer-when-downgrade"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6018.357737889582!2d28.88230267125539!3d41.04385999722227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa3d6f6766a67%3A0x466e63c7be43df26!2zQmlsZ2kgxLDFn2xlbSDEsGTDvGJsw7wgw5x1YmVsbMO8w7xyxLFr!5e0!3m2!1str!2str!4v1690829430795!5m2!1str!2str">
+                    </iframe>
+                    <br>
+
+                    <small>
+                        <a href="https://www.google.com/maps/place/Bilgi+İşlem+Şube+Müdürlüğü/41.0438599,28.8823026,17z" target="_blank" style="color: #555; text-align:left">
+                            View Larger Map
+                        </a>
+                    </small>
+                </div>
+
+
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+          
+    </div>
+</body>
+</html>

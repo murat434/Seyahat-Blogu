@@ -1,0 +1,46 @@
+﻿@model List<TravelTripProje.Models.Siniflar.haberlesme>
+@{
+    ViewBag.Title = "haberlesmeListe";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Ad Soyad</th>
+        <th>Mail</th>
+        <th>Konu</th>
+        <th>Mesaj</th>
+        <th>İşlem</th>
+    </tr>
+    @foreach (var m in Model)
+    {
+        <tr>
+            <td>@m.ID</td>
+
+            <td>
+            @(!string.IsNullOrEmpty(m.AdSoyad)
+            ? (m.AdSoyad.Length > 20 ? m.AdSoyad.Substring(0, 20) + "..." : m.AdSoyad)
+            : "Ad Soyad yok")
+            </td>
+
+
+            <td>@(!string.IsNullOrEmpty(m.Mail) ? (m.Mail.Length > 25 ? m.Mail.Substring(0, 25) + "..." : m.Mail) : "Mail yok")</td>
+
+
+            <td>@(!string.IsNullOrEmpty(m.Konu) ? (m.Konu.Length > 30 ? m.Konu.Substring(0, 30) + "..." : m.Konu) : "Konu yok")</td>
+
+
+            <td>
+                @(!string.IsNullOrEmpty(m.Mesaj)
+            ? (m.Mesaj.Length > 50 ? m.Mesaj.Substring(0, 50) + "..." : m.Mesaj)
+            : "Mesaj yok")
+            </td>
+
+
+            <td>
+                <a href="/Admin/haberlesmeGetir/@m.ID" class="btn btn-warning">Görüntüle</a>
+                <a href="/Admin/haberlesmeSil/@m.ID" class="btn btn-danger">Sil</a>
+            </td>
+        </tr>
+    }
+</table>
